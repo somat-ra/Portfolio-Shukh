@@ -1,0 +1,84 @@
+:root {
+  --default-color: rgb(240, 127, 38);
+}
+
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header-title, .contact-link  {
+  font-weight: 600;
+}
+
+.header-strong {
+  font-size: 50px;
+}
+
+.header-subtitle {
+  font-size: small;
+  margin-bottom: 30px;
+}
+
+.buttoms-about-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.aboutme-button,
+.contact-button {
+  border: 1px solid var(--default-color);
+  border-radius: 5px;
+  width: 100px;
+  padding: 18px;
+  text-decoration: none;
+  font-size: 10px;
+  box-shadow: 1px 1px 6px 0px grey;
+}
+
+.aboutme-button {
+  background-color: var(--default-color);
+  color: aliceblue;
+}
+.contact-button {
+  margin-left: 10px;
+  color: black;
+}
+
+.contact-button:hover {
+  background-color: var(--default-color);
+  color: aliceblue;
+}
+
+.aboutme-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.go-homepage-link {
+    font-size: 15px;
+    display: block;
+ margin-bottom: 29px;
+}
+
+.columns-parent {
+    display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+
+}
+.column-aboutme {
+    background-color: rgb(240, 127, 38, 0.8);
+    color: aliceblue;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.column-aboutme, .second-column {
+    margin-left: 20px;
+}
+
