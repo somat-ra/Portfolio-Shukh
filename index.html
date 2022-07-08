@@ -19,8 +19,48 @@
       name="description"
       content="Best projects of the Front-end developer Alina Shukh in her self-made portfolio"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
+    <header class="navbar-bootstrap">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+              <a class="nav-link" href="about.html">About me</a>
+              <a class="nav-link" href="about.html#contact">Contacts</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <div class="container">
       <h1 class="header-title">
         👋 Hi! I am
@@ -45,6 +85,68 @@
           >Contact me
         </a>
       </div>
+
+      <main class="projects-example">
+        <div class="row mt-5">
+          <div class="col-sm-6">
+            <img
+              src="images/yogurt.png"
+              class="img-fluid border"
+              alt="yogurt-image"
+            />
+          </div>
+          <div class="col-sm-6">
+            <h2 class="text-start fw-bold mt-3 mt-sm-0">Yogurt site</h2>
+            <p class="text-start mb-sm-4">
+              This is one of my first work after I learn what coding means and
+              how to understand html
+            </p>
+            <button class="project-button btn d-flex justify-content-end mb-4">
+              Launch Yogurt site
+            </button>
+          </div>
+        </div>
+
+        <div class="row mt-3 second-row">
+          <div class="col-sm-6 weather-text">
+            <h2 class="text-start fw-bold mt-3 mt-sm-0">Croissant site</h2>
+            <p class="text-start mb-sm-4">
+              This is multi-pages site with different css techniques in it. Here
+              I better understand how web-sites are working
+            </p>
+            <button class="btn project-button d-flex justify-content-end mb-4">
+              Launch Croissant site
+            </button>
+          </div>
+          <div class="col-sm-6 weather-image">
+            <img
+              src="images/croissant.png"
+              class="img-fluid border"
+              alt="croissant-image"
+            />
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-sm-6">
+            <img
+              src="images/weather.png"
+              class="img-fluid border"
+              alt="weather-app"
+            />
+          </div>
+          <div class="col-sm-6">
+            <h2 class="text-start fw-bold mt-3 mt-sm-0">Weather app</h2>
+            <p class="text-start mb-sm-4">
+              Here you can find different tools such as html, js and css. I also
+              used bootsrap and API.
+            </p>
+            <button class="btn project-button d-flex justify-content-end mb-4">
+              Launch Weather app
+            </button>
+          </div>
+        </div>
+      </main>
     </div>
   </body>
 </html>

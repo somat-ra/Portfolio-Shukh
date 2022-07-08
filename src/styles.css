@@ -2,14 +2,14 @@
   --default-color: rgb(240, 127, 38);
 }
 
-
 .container {
   text-align: center;
   margin-top: 50px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-.header-title, .contact-link  {
+.header-title,
+.contact-link {
   font-weight: 600;
 }
 
@@ -48,6 +48,16 @@
   color: black;
 }
 
+.project-button {
+  border: 1px solid var(--default-color);
+  border-radius: 5px;
+  padding: 18px;
+  text-decoration: none;
+  box-shadow: 1px 1px 6px 0px grey;
+  background-color: var(--default-color) !important;
+  color: aliceblue !important;
+}
+
 .contact-button:hover {
   background-color: var(--default-color);
   color: aliceblue;
@@ -58,27 +68,44 @@
   color: black;
 }
 
+.project-button:hover {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid var(--default-color) !important;
+}
+
 .go-homepage-link {
-    font-size: 15px;
-    display: block;
- margin-bottom: 29px;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 29px;
 }
 
 .columns-parent {
-    display: flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-
-
 }
 .column-aboutme {
-    background-color: rgb(240, 127, 38, 0.8);
-    color: aliceblue;
+  background-color: rgb(240, 127, 38, 0.8);
+  color: aliceblue;
   border-radius: 5px;
   padding: 20px;
 }
 
-.column-aboutme, .second-column {
-    margin-left: 20px;
+.column-aboutme,
+.second-column {
+  margin-left: 20px;
 }
 
+@media (max-width: 576px) {
+  .second-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .weather-text {
+    order: 2;
+  }
+  .weather-image {
+    order: 1;
+  }
+}
