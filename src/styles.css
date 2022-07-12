@@ -13,6 +13,14 @@
   font-weight: 600;
 }
 
+@media (max-width: 576px) {
+  .header-title,
+  .header-strong,
+  .contact-link {
+    font-size: 40px;
+  }
+}
+
 .header-strong {
   font-size: 50px;
 }
